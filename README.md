@@ -1,13 +1,56 @@
-<h1>Quantum Machine Learning</h1>
-<h2>Basics of Quantum Computing</h2>
-<ol>
-  <li>Basics of Quantum Mechanics -> Chapter 2 (Neilson and Chunag QIC)</li>
-  <li>Quantum Gates and Circuits: Principles and Implementation -> Chapter 4 (Neilson and Chunag QIC) and Qiskit Modulues</li>
-</ol>
-<h2>Quantum Algorithms</h2>
-<ol>
-  <li>QFT Based Algorithms -> Chapter 5 (Neilson and Chunag QIC) and Qiskit Modules</li>
-  <li>Quantum Search Based Algorihtms -> Chapter 6 (Neilson and Chunag QIC) and Qiskit Modules</li>
-  <li>Quantum Variational Algorithm Design -> Qiskit Modules and Qiskit Youtube Tutorials</li>
-</ol>
+<!DOCTYPE html>
+<html lang="en">
 
+<body>
+
+<h1>Quantum Machine Learning</h1>
+
+<h2>1. Basics of Quantum Mechanics (Nielsen &amp; Chuang, Ch. 2)</h2>
+<ul>
+  <li>Dirac notation, complex Hilbert spaces, inner products, orthonormal bases.</li>
+  <li>The four postulates: state space, unitary evolution, projective measurement (Born rule), composition via tensor products.</li>
+  <li>Pure vs. mixed states, density matrices, partial trace, reduced states.</li>
+  <li>Single-qubit Bloch-sphere geometry, no-cloning and no-broadcasting theorems.</li>
+  <li>Entanglement fundamentals: Bell states, Schmidt decomposition, separability criteria.</li>
+</ul>
+
+<h2>2. Quantum Gates &amp; Circuits (Nielsen &amp; Chuang, Ch. 4 + Qiskit)</h2>
+<ul>
+  <li>Universal single-qubit gates: Pauli (X, Y, Z), phase (S, T), rotations (R_x, R_y, R_z).</li>
+  <li>Entangling gates: CNOT, CZ, SWAP; Toffoli for universal reversible computation.</li>
+  <li>Circuit synthesis: Euler decompositions, Solovay–Kitaev theorem.</li>
+  <li>Resource metrics: depth, width, T-count, fault-tolerant considerations.</li>
+  <li>Qiskit primitives: <code>QuantumCircuit</code>, gate calls, transpilation, visualization.</li>
+</ul>
+
+
+<h2>3. QFT-Based Algorithms (Nielsen &amp; Chuang, Ch. 5 + Qiskit)</h2>
+<ul>
+  <li>Quantum Fourier Transform definition, circuit with controlled-phase ladder and SWAP cleanup.</li>
+  <li>Quantum Phase Estimation (QPE): eigenphase extraction, precision vs. resources.</li>
+  <li>Order-finding &amp; period-finding; Shor’s factoring and discrete-log as layered applications.</li>
+  <li>Hidden Subgroup Problem viewpoint and extensions.</li>
+  <li>Qiskit tools: <code>QFT</code> class, <code>PhaseEstimation</code>, modular-exponentiation subcircuits.</li>
+</ul>
+
+<h2>4. Quantum Search Algorithms (Nielsen &amp; Chuang, Ch. 6 + Qiskit)</h2>
+<ul>
+  <li>Grover iteration: oracle phase flip + diffusion operator; geometric 2-D interpretation.</li>
+  <li>Optimal O(sqrt{N}) query complexity and matching lower bound.</li>
+  <li>Variants: multiple marked items, quantum counting, fixed-point searches, amplitude estimation.</li>
+  <li>Circuit techniques for multi-controlled phase gates and ancilla optimization.</li>
+  <li>Qiskit resources: <code>Grover</code> class, oracle wrappers, iterative amplitude-estimation routines.</li>
+</ul>
+
+<h2>5. Variational Quantum Algorithm Design (Qiskit Modules &amp; Tutorials)</h2>
+<ul>
+  <li>NISQ motivation: hybrid quantum–classical optimization tolerant of noise.</li>
+  <li>Ansatz strategies: hardware-efficient, chemistry-inspired (UCCSD), problem-parameterized, layer-wise expressibility.</li>
+  <li>Cost-function evaluation via expectation values; measurement grouping and readout-error mitigation.</li>
+  <li>Parameter-update methods: gradient-free (COBYLA, SPSA, Nelder–Mead) vs. gradient-based (parameter-shift, natural gradient).</li>
+  <li>Flagship algorithms: VQE (ground-state energy), QAOA (combinatorial optimization), VQC/QNN (machine learning).</li>
+  <li>Qiskit interfaces: <code>VQE</code>, <code>QAOA</code>, Runtime “Estimation” &amp; “Sampler” primitives, noise models, experiment dashboards.</li>
+</ul>
+
+</body>
+</html>
