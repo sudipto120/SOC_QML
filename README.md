@@ -44,12 +44,11 @@
 
 <h2>5. Variational Quantum Algorithm Design (Qiskit Modules &amp; Tutorials)</h2>
 <ul>
-  <li>NISQ motivation: hybrid quantum–classical optimization tolerant of noise.</li>
-  <li>Ansatz strategies: hardware-efficient, chemistry-inspired (UCCSD), problem-parameterized, layer-wise expressibility.</li>
-  <li>Cost-function evaluation via expectation values; measurement grouping and readout-error mitigation.</li>
+  <li>Ansatz construction for a given hamiltonian.</li>
+  <li>Cost-function evaluation via expectation values</li>
   <li>Parameter-update methods: gradient-free (COBYLA, SPSA, Nelder–Mead) vs. gradient-based (parameter-shift, natural gradient).</li>
-  <li>Flagship algorithms: VQE (ground-state energy), QAOA (combinatorial optimization), VQC/QNN (machine learning).</li>
-  <li>Qiskit interfaces: <code>VQE</code>, <code>QAOA</code>, Runtime “Estimation” &amp; “Sampler” primitives, noise models, experiment dashboards.</li>
+  <li>QUBO / Ising Formulation</li>
+  <li>Flagship algorithms: VQE (ground-state energy), QAOA (combinatorial </li>
 </ul>
 
 </body>
