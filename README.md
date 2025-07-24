@@ -50,6 +50,13 @@
   <li>QUBO / Ising Formulation</li>
   <li>Flagship algorithms: VQE (ground-state energy), QAOA (combinatorial </li>
 </ul>
+<h2>6. QCNN (Quantum Convolutional Neural Networks) (Qiskit Modules &amp; Tutorials)</h2>
+<ul>
+  <li>Quantum Data & Encoding</li>
+  <li>QCNN Architecture</li>
+  <li>Quantum Circuits for QCNN</li>
+  <li>Training QCNN</li>
+</ul>
 
 </body>
 </html>
